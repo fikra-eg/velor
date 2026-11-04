@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#14243a" />
+  <meta name="description" content="A modern men's fragrance store concept." />
+  <title>VÉLOR — Men's Fragrances</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="announcement-bar">
+    <span>THE MEN'S FRAGRANCE EDIT</span>
+    <span class="announcement-dot"></span>
+    <span>MADE FOR YOUR PRESENCE</span>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <button class="icon-button menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    <a class="wordmark" href="#home" aria-label="VÉLOR home">VÉLOR<span class="registered">®</span><small>MEN'S FRAGRANCES</small></a>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#collection">Shop all</a>
+      <a href="#signature">The signature</a>
+      <a href="#about">Our approach</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="searchToggle" aria-label="Search products"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg></button>
+      <button class="bag-button" id="bagToggle" aria-label="Open shopping bag">BAG <span id="bagCount">0</span></button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-label="VÉLOR fragrance collection">
+      <img class="hero-image" src="https://i.pinimg.com/736x/a2/25/61/a22561ef87c6811252a2477ce41bcbf7.jpg" alt="Men's fragrance campaign" fetchpriority="high" />
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light-eyebrow"><span></span> THE ART OF PRESENCE</p>
+        <h1>A SCENT THAT<br /><em>STAYS WITH YOU.</em></h1>
+        <p class="hero-copy">Find the fragrance that feels like you.</p>
+        <a class="button button-light" href="#collection">DISCOVER THE COLLECTION <span>↗</span></a>
+      </div>
+      <div class="hero-bottom"><span>01 — MEN'S COLLECTION</span><span>CRAFTED FOR EVERY MOMENT</span><a href="#collection">SCROLL TO EXPLORE ↓</a></div>
+    </section>
+
+    <section class="intro-strip" id="signature">
+      <div class="intro-label">THE VÉLOR POINT OF VIEW</div>
+      <div class="intro-copy-wrap">
+        <h2>BE REMEMBERED.<br /><span>WITHOUT SAYING A WORD.</span></h2>
+        <p>مش مجرد ريحة حلوة؛ اختار عطر يعبر عنك ويسيب انطباع يفضل موجود حتى بعد ما تمشي.</p>
+      </div>
+    </section>
+
+    <section class="collection-section" id="collection">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> FIND YOUR SIGNATURE</p>
+          <h2>THE COLLECTION</h2>
+          <p class="section-subtitle">Six scents. Different moods. One signature.</p>
+        </div>
+        <div class="collection-tools">
+          <label class="search-box" id="searchBox"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg><input id="searchInput" type="search" placeholder="Search fragrances" aria-label="Search fragrances" /></label>
+          <select id="sortSelect" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: Low to high</option><option value="high">Price: High to low</option></select>
+        </div>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter fragrances">
+        <button class="filter-chip active" data-filter="all">ALL FRAGRANCES</button>
+        <button class="filter-chip" data-filter="fresh">FRESH</button>
+        <button class="filter-chip" data-filter="woody">WOODY</button>
+        <button class="filter-chip" data-filter="warm">WARM & SPICY</button>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="empty-state" id="emptyState" hidden>No fragrances match your search.</p>
+    </section>
+
+    <section class="editorial-section">
+      <div class="editorial-visual">
+        <img src="https://i.pinimg.com/736x/d5/06/95/d50695bfe463e65957d9672c077592ab.jpg" alt="VÉLOR fragrance editorial image" loading="lazy" />
+        <span class="image-caption">VÉLOR — THE DETAILS MATTER</span>
+      </div>
+      <div class="editorial-copy">
+        <p class="eyebrow"><span></span> MORE THAN A FRAGRANCE</p>
+        <h2>YOUR PRESENCE<br /><em>LEAVES A TRACE.</em></h2>
+        <p class="editorial-arabic">في تفاصيل صغيرة بتفرق. اختيارك لعطرك واحد منها.</p>
+        <a href="#collection" class="text-link">EXPLORE THE SCENTS <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="benefit-row" id="about">
+      <article><span class="benefit-index">01</span><div><h3>MADE FOR MEN</h3><p>Scents with character and a point of view.</p></div></article>
+      <article><span class="benefit-index">02</span><div><h3>FIND YOUR NOTES</h3><p>Explore scent families and discover your style.</p></div></article>
+      <article><span class="benefit-index">03</span><div><h3>MADE TO BE YOURS</h3><p>Choose the scent that feels like your signature.</p></div></article>
+    </section>
+
+    <section class="closing-banner">
+      <div class="closing-mark">V.</div>
+      <p class="eyebrow light-eyebrow"><span></span> YOUR SCENT. YOUR SIGNATURE.</p>
+      <h2>MAKE IT<br /><em>MEMORABLE.</em></h2>
+      <a class="button button-outline-light" href="#collection">SHOP THE COLLECTION <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">
+      <a class="wordmark footer-wordmark" href="#home">VÉLOR<span class="registered">®</span><small>MEN'S FRAGRANCES</small></a>
+      <p>DEFINE YOUR PRESENCE.</p>
+      <a class="back-top" href="#home">BACK TO TOP ↑</a>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> VÉLOR CONCEPT. ALL RIGHTS RESERVED.</span><span>AN INDEPENDENT E-COMMERCE CONCEPT BY FIKRA</span></div>
+  </footer>
+
+  <div class="overlay" id="overlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag" aria-hidden="true">
+    <div class="drawer-head"><div><p class="eyebrow"><span></span> YOUR SELECTION</p><h2>YOUR BAG <span id="drawerCount">(0)</span></h2></div><button class="close-button" data-close aria-label="Close bag">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><span class="empty-bag-icon">BAG</span><h3>YOUR BAG IS EMPTY</h3><p>Find a scent that feels like you.</p><button class="button button-navy" id="continueShopping">CONTINUE SHOPPING <span>↗</span></button></div>
+    <div class="cart-footer" id="cartFooter" hidden><div class="subtotal-line"><span>SUBTOTAL</span><strong id="cartSubtotal">EGP 0</strong></div><p>Shipping and payment details are confirmed at checkout.</p><button class="button button-navy checkout-button" id="checkoutButton">CONTINUE TO CHECKOUT <span>↗</span></button></div>
+  </aside>
+
+  <section class="product-modal" id="productModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Product details">
+    <button class="modal-close close-button" data-close aria-label="Close product details">×</button>
+    <div class="modal-layout" id="modalContent"></div>
+  </section>
+
+  <section class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Checkout details">
+    <button class="modal-close close-button" data-close aria-label="Close checkout">×</button>
+    <div class="checkout-inner">
+      <p class="eyebrow"><span></span> ALMOST YOURS</p>
+      <h2>ORDER DETAILS</h2>
+      <p class="checkout-note">Enter your details to prepare your order. The store's WhatsApp number must be connected before accepting real orders.</p>
+      <form id="checkoutForm">
+        <label>FULL NAME<input name="name" required autocomplete="name" placeholder="Your full name" /></label>
+        <label>PHONE NUMBER<input name="phone" type="tel" required autocomplete="tel" placeholder="01XXXXXXXXX" pattern="[0-9+() -]{8,18}" /></label>
+        <label>GOVERNORATE<select name="governorate" required><option value="">Choose governorate</option><option>Cairo</option><option>Giza</option><option>Alexandria</option><option>Dakahlia</option><option>Other</option></select></label>
+        <label>FULL ADDRESS<textarea name="address" rows="2" required placeholder="Street, building, apartment"></textarea></label>
+        <button class="button button-navy" type="submit">PREPARE MY ORDER <span>↗</span></button>
+      </form>
+      <p class="form-feedback" id="formFeedback" role="status"></p>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
