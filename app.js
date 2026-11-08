@@ -1,5 +1,5 @@
 /*
- * VÉLOR storefront concept.
+ * MOMENT storefront concept.
  * Product names, notes, prices and policies below are demo content and must be
  * replaced with the brand's real product data before launch.
  * Add the order WhatsApp number in WHATSAPP_NUMBER to enable order handoff.
@@ -7,12 +7,12 @@
 const WHATSAPP_NUMBER = ""; // Example format: 2010XXXXXXXX
 
 const products = [
-  { id: 1, name: "BLUE SIGNATURE", family: "Fresh · Aromatic", profile: "fresh", size: "100 ML", concentration: "EAU DE PARFUM", price: 890, tag: "BEST SELLER", image: "https://raw.githubusercontent.com/fikra-eg/perfPictures/main/optimized/product-01.svg", arabic: "انتعاش واضح من أول رشة، بطابع رجالي نظيف يناسب يومك من الصبح لحد آخره.", notes: "CITRUS · AROMATIC · WOODY", code: "VL-001" },
-  { id: 2, name: "NOIR ELIXIR", family: "Woody · Intense", profile: "woody", size: "100 ML", concentration: "EAU DE PARFUM", price: 950, tag: "SIGNATURE", image: "https://raw.githubusercontent.com/fikra-eg/perfPictures/main/optimized/product-02.svg", arabic: "شخصية أعمق ولمسة خشبية دافئة؛ اختيار مناسب للي يحب الحضور الهادي والواثق.", notes: "WOODY · AMBER · MUSK", code: "VL-002" },
-  { id: 3, name: "SILVER FORM", family: "Fresh · Clean", profile: "fresh", size: "100 ML", concentration: "EAU DE PARFUM", price: 850, tag: "NEW ARRIVAL", image: "https://raw.githubusercontent.com/fikra-eg/perfPictures/main/optimized/product-03.svg", arabic: "رائحة خفيفة ومتوازنة بإحساس منعش، مناسبة للاستخدام اليومي من غير مبالغة.", notes: "FRESH · MUSK · CITRUS", code: "VL-003" },
-  { id: 4, name: "OUD RESERVE", family: "Warm · Woody", profile: "warm", size: "100 ML", concentration: "EAU DE PARFUM", price: 990, tag: "", image: "https://raw.githubusercontent.com/fikra-eg/perfPictures/main/optimized/product-04.svg", arabic: "طابع شرقي دافئ بلمسة خشبية واضحة، مناسب للمساء والمناسبات الخاصة.", notes: "OUD · AMBER · SPICE", code: "VL-004" },
-  { id: 5, name: "AFTER HOURS", family: "Warm · Amber", profile: "warm", size: "100 ML", concentration: "EAU DE PARFUM", price: 920, tag: "", image: "https://raw.githubusercontent.com/fikra-eg/perfPictures/main/optimized/product-05.svg", arabic: "دفء ناعم وطابع جذاب يليق بالأوقات اللي تحب تسيب فيها انطباع مختلف.", notes: "AMBER · VANILLA · WOODS", code: "VL-005" },
-  { id: 6, name: "THE ONE", family: "Woody · Fresh", profile: "woody", size: "100 ML", concentration: "EAU DE PARFUM", price: 890, tag: "", image: "https://raw.githubusercontent.com/fikra-eg/perfPictures/main/optimized/product-06.svg", arabic: "توازن بين الانتعاش والدفء، لعطر بسيط في اختياره ومميز في حضوره.", notes: "AROMATIC · WOODY · MUSK", code: "VL-006" }
+  { id: 1, name: "MOMENT 01", family: "Classic · Stainless Steel", profile: "classic", size: "40 MM", concentration: "QUARTZ MOVEMENT", price: 1450, tag: "FEATURED", image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1000&q=90", arabic: "تصميم كلاسيكي بمينا واضحة وسوار معدني؛ اختيار عملي يليق بالاستخدام اليومي.", notes: "STAINLESS STEEL · WHITE DIAL", code: "MM-001" },
+  { id: 2, name: "ATLAS STEEL", family: "Minimal · Silver", profile: "minimal", size: "42 MM", concentration: "QUARTZ MOVEMENT", price: 1690, tag: "POPULAR", image: "https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=1000&q=90", arabic: "خطوط هادئة ومينا بسيطة مع سوار فضي؛ ساعة سهلة التنسيق مع أغلب إطلالاتك.", notes: "SILVER CASE · CLEAN DIAL", code: "MM-002" },
+  { id: 3, name: "NOIR CLASSIC", family: "Classic · Black", profile: "classic", size: "40 MM", concentration: "QUARTZ MOVEMENT", price: 1590, tag: "NEW ARRIVAL", image: "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=1000&q=90", arabic: "مينا سوداء بتفاصيل واضحة وتصميم متوازن يناسب الشغل والخروجات.", notes: "BLACK DIAL · STEEL CASE", code: "MM-003" },
+  { id: 4, name: "CHRONO BLACK", family: "Sport · Chronograph", profile: "sport", size: "44 MM", concentration: "CHRONOGRAPH", price: 1890, tag: "", image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=1000&q=90", arabic: "ستايل رياضي بحضور أقوى وتفاصيل مستوحاة من ساعات الكرونوغراف.", notes: "CHRONOGRAPH · BLACK STRAP", code: "MM-004" },
+  { id: 5, name: "SILVER LINE", family: "Minimal · Silver", profile: "minimal", size: "38 MM", concentration: "QUARTZ MOVEMENT", price: 1390, tag: "", image: "https://images.unsplash.com/photo-1533139502658-0198f920d8e8?auto=format&fit=crop&w=1000&q=90", arabic: "حجم مريح وتفاصيل بسيطة ولمسة فضية تناسب الإطلالات اليومية الهادية.", notes: "SILVER FINISH · MINIMAL DIAL", code: "MM-005" },
+  { id: 6, name: "FIELD BLACK", family: "Sport · Everyday", profile: "sport", size: "42 MM", concentration: "QUARTZ MOVEMENT", price: 1750, tag: "", image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=1000&q=90", arabic: "تصميم عملي بطابع رياضي وسوار مريح؛ مناسب للحركة والاستخدام المتكرر.", notes: "DARK DIAL · SPORT STRAP", code: "MM-006" }
 ];
 
 const state = { filter: "all", search: "", sort: "featured", cart: readCart(), activeProduct: null };
@@ -22,11 +22,11 @@ const money = (amount) => `EGP ${Number(amount).toLocaleString("en-EG", { maximu
 const grid = $("#productGrid");
 
 function readCart() {
-  try { return JSON.parse(localStorage.getItem("velor-demo-cart") || "[]"); }
+  try { return JSON.parse(localStorage.getItem("moment-demo-cart") || "[]"); }
   catch { return []; }
 }
 function saveCart() {
-  try { localStorage.setItem("velor-demo-cart", JSON.stringify(state.cart)); } catch { /* Storage may be unavailable in private browsing. */ }
+  try { localStorage.setItem("moment-demo-cart", JSON.stringify(state.cart)); } catch { /* Storage may be unavailable in private browsing. */ }
 }
 function productById(id) { return products.find((product) => product.id === Number(id)); }
 function safeText(value) { return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[char]); }
@@ -109,7 +109,7 @@ function renderSignaturePicks() {
           <h3>${safeText(product.name)}</h3>
           <p class="signature-price">${money(product.price)}</p>
         </div>
-        <button class="signature-link" type="button" data-signature-view="${product.id}">DISCOVER SCENT <span>↗</span></button>
+        <button class="signature-link" type="button" data-signature-view="${product.id}">VIEW MODEL <span>↗</span></button>
       </div>
     </article>`).join("");
   $$(".signature-visual img", $("#signatureGrid")).forEach((img) => bindImageRecovery(img, img.closest(".signature-visual")));
@@ -175,13 +175,13 @@ function openProduct(id) {
   $("#modalContent").innerHTML = `
     <div class="modal-image-wrap">${productImageMarkup(product)}<div class="image-fallback" aria-hidden="true"></div></div>
     <div class="modal-product-info">
-      <p class="eyebrow"><span></span> ${safeText(product.code)} / MEN'S FRAGRANCE</p>
+      <p class="eyebrow"><span></span> ${safeText(product.code)} / WATCH DETAILS</p>
       <h2>${safeText(product.name)}</h2>
       <p class="modal-meta">${safeText(product.concentration)} · ${product.size}</p>
       <div class="modal-price">${money(product.price)}</div>
       <p class="modal-description">${safeText(product.arabic)}</p>
-      <div class="modal-detail"><strong>SCENT PROFILE</strong><span>${safeText(product.notes)}</span></div>
-      <div class="modal-detail"><strong>FRAGRANCE FAMILY</strong><span>${safeText(product.family)}</span></div>
+      <div class="modal-detail"><strong>DESIGN DETAILS</strong><span>${safeText(product.notes)}</span></div>
+      <div class="modal-detail"><strong>STYLE</strong><span>${safeText(product.family)}</span></div>
       <button type="button" class="button button-navy" data-modal-add="${product.id}">ADD TO BAG <span>↗</span></button>
     </div>`;
   const image = $(".modal-image-wrap img");
